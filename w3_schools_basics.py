@@ -108,4 +108,63 @@ print()
 print("------------------------------------------------------------------------------------------------------------")
 print()
 
-print("stopped at https://www.w3schools.com/python/python_datatypes.asp")
+print("DATA TYPES")
+
+print("Python has the following data types built-in by default, in these categories:\n" +
+      "Text Type:	str \n" +
+      "Numeric Types:	int, float, complex \n" +
+      "Sequence Types:	list, tuple, range \n" +
+      "Mapping Type:	dict \n" +
+      "Set Types:	set, frozenset \n" +
+      "Boolean Type:	bool \n" +
+      "Binary Types:	bytes, bytearray, memoryview  \n" +
+      "None Type:	NoneType \n")
+
+print()
+print("You can get the data type of any object by using the type() function")
+
+x = 5
+print(type(x))
+
+print("If you want to specify the data type, you can use str(), int(), float(), list(), tuple(), dict(), set(), "
+      "bytes(), bytearray()")
+
+surname = str("dowra")
+bond = float(9013340.89)
+age = int(18)
+data = bytes([65, 66, 67])
+
+# with open("preds.png", "rb") as image:
+#     f = image.read()
+#     b = bytearray(f)
+#     print(b[4])
+
+
+
+
+
+print()
+print("------------------------------------------------------------------------------------------------------------")
+print()
+import random
+print("NUMBERS")
+
+print(random.randrange(1, 10, 1))
+
+
+print("Casting in python is done using constructor functions")
+w = float("4.2")
+print(w)
+print("w = float(\"4.2\") # w will be 4.2")
+
+print()
+print("------------------------------------------------------------------------------------------------------------")
+print()
+
+print("STRINGS")
+print("stopped at https://www.w3schools.com/python/python_strings.asp")
+
+
+print()
+print("------------------------------------------------------------------------------------------------------------")
+print()
