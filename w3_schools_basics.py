@@ -140,17 +140,14 @@ data = bytes([65, 66, 67])
 #     print(b[4])
 
 
-
-
-
 print()
 print("------------------------------------------------------------------------------------------------------------")
 print()
 import random
+
 print("NUMBERS")
 
 print(random.randrange(1, 10, 1))
-
 
 print("Casting in python is done using constructor functions")
 w = float("4.2")
@@ -162,7 +159,91 @@ print("-------------------------------------------------------------------------
 print()
 
 print("STRINGS")
-print("stopped at https://www.w3schools.com/python/python_strings.asp")
+
+print("Strings in python are surrounded by either single quotation marks, or double quotation marks.")
+print('Single Quotation(\')')
+print("Double Quotation(\")")
+
+hello = "hello"[0]
+print(hello)
+
+print("You can assign a multiline string to a variable by using three quotes:")
+long_comment = """     This is often used as
+     a format to write long comments 
+"""
+print(long_comment)
+
+print("Like many other popular programming languages, strings in Python are arrays of bytes representing unicode "
+      "characters. "
+      "However, Python does not have a character data type, a single character is simply a string with a length of 1.")
+
+print("Since strings are arrays, we can loop through the characters in a string, with a for loop.")
+
+string = "abc"
+for character in string:
+    print(character)
+
+print()
+
+print("To get the length of a string, use the len() function.")
+
+print(len(string))
+
+print()
+
+print("To check if a certain phrase or character is present in a string, we can use the keyword in.")
+
+print("a" in string)
+
+print()
+
+print("Check if something is NOT in a string with not in")
+
+print("d" not in string)
+
+print()
+
+print("You can return a range of characters by using the slice syntax.")
+print("Specify the start index and the end index, separated by a colon, to return a part of the string.")
+
+print(string[2:4])
+
+print("By leaving out the start index, the range will start at the first character")
+print(string[:2])
+
+print("By leaving out the end index, the range will go to the end:")
+print(string[2:])
+
+print()
+
+print("The upper() method returns the string in upper case")
+print(string.upper())
+print("The lower() method returns the string in lower case")
+print(string.lower())
+print("The strip() method removes any whitespace from the beginning or the end.")
+a = " Hello, World! "
+print(a.strip())
+print("The replace() method replaces a string with another string.")
+print(a.replace("H", "J"))
+print("The split() method splits the string into substrings if it finds instances of the separator")
+a = "test,this,comma,thing"
+print(a.split(',', maxsplit=1))
+print()
+print("To concatenate, or combine, two strings you can use the + operator.")
+name = "Rezana"
+surname = "Dowra"
+print(name + " " + surname)
+print("To format we can use the f-string method f\'{}\' to replace variables")
+print(f"My name is {name}")
+print("You can also use {} in the string and use the format(variable_name,..) method")
+print("My name is {}. My surname is {}".format(name, surname))
+
+print()
+print("------------------------------------------------------------------------------------------------------------")
+print()
+
+print("BOOLEANS")
+print("stopped at https://www.w3schools.com/python/python_booleans.asp")
 
 
 print()
