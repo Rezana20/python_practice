@@ -243,9 +243,34 @@ print("-------------------------------------------------------------------------
 print()
 
 print("BOOLEANS")
-print("stopped at https://www.w3schools.com/python/python_booleans.asp")
+print("When you compare two values, the expression is evaluated and Python returns the Boolean answer.")
+
+value_x = 9
+value_y = 20
+
+if value_x > value_y:
+    print("It's not my birthday")
+else:
+    print("It's my birthday!")
+
+print()
+print("Almost any value is evaluated to True if it has some sort of content. \n "
+      "Any string is True, except empty strings.\n  Any number is True, except 0. \n"
+      "Any list, tuple, set, and dictionary are True, except empty ones.")
+print()
+print(bool("abc"))
+print(bool(123))
+print(bool(["apple", "cherry", "banana"]))
+print()
+print(bool(""))
+print(bool())
+print(bool([]))
 
 
 print()
 print("------------------------------------------------------------------------------------------------------------")
 print()
+
+
+print("OPERATORS")
+print("https://www.w3schools.com/python/python_operators.asp")
